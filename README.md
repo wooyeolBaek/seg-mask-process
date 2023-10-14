@@ -8,8 +8,6 @@ Remove pixel areas below the specific threshold using Breadth First Search
 
 ## Initialize
 ```shell
-git clone 
-cd seg-mask-process
 python -m venv .seg_venv
 mkdir masks
 ```
