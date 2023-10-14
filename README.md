@@ -9,6 +9,8 @@ Remove pixel areas below the specific threshold using Breadth First Search
 ## Initialize
 ```shell
 python -m venv .seg_venv
+source .seg_venv/bin/activate
+pip install requirements.txt
 mkdir masks
 ```
 Put mask images inside the `masks` directory
