@@ -1,6 +1,6 @@
 # Post Process for Segmentation Masks
 ## Usage
-Remove pixel areas below the specific threshold using Breadth First Search
+Fill pixel areas below the specific threshold using Breadth First Search
 
 ![대체 텍스트](./assets/mask.png)
 ![대체 텍스트](./assets/mask_processed.png)
