@@ -164,7 +164,7 @@ def main(args):
         os.mkdir(save_dir)
 
     if args.multiprocess:
-        with concurrent.futures.ThreadPoolExecutor(max_workers=os.cpu_count()//2) as executor:
+        with concurrent.futures.ProcessPoolExecutor(max_workers=os.cpu_count()//2) as executor:
             futures = []
             for mask_dir in mask_dirs:
                 futures.append(executor.submit(process, mask_dir, save_dir, args.thr, args.binary))

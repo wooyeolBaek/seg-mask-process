@@ -28,7 +28,7 @@ def main():
     if not os.path.exists(save_dir):
         os.mkdir(save_dir)
 
-    with concurrent.futures.ThreadPoolExecutor(max_workers=os.cpu_count()//2) as executor:
+    with concurrent.futures.ProcessPoolExecutor(max_workers=os.cpu_count()//2) as executor:
         futures = []
         for mask_dir in mask_dirs:
             futures.append(executor.submit(norm, mask_dir, save_dir))
